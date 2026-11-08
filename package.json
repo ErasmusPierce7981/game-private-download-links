@@ -1,0 +1,14 @@
+{
+  "name": "game-private-download-links",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "tsx src/signed_download.ts setup",
+    "start": "tsx src/signed_download.ts",
+    "test": "node --import tsx --test test/access_policy.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {"zod": "^3.23.8"},
+  "devDependencies": {"@types/node": "^22.10.0", "tsx": "^4.19.0", "typescript": "^5.7.0"}
+}
